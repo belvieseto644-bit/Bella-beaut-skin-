@@ -1,0 +1,260 @@
+# Bella Beauté Skin — Site Web Complet
+
+Copie tout ce code dans un fichier nommé :
+
+```text
+index.html
+```
+
+Puis ajoute ce fichier dans ton dépôt GitHub.
+
+---
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Beauté Skin</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#fff7f7;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(135deg,#ff8fb1,#ff5e8a);
+      color:white;
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:38px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      background:white;
+      color:#ff3f73;
+      padding:12px 25px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .section-title{
+      text-align:center;
+      margin:50px 0 20px;
+      font-size:30px;
+      color:#ff3f73;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#ff3f73;
+    }
+
+    .price{
+      font-size:22px;
+      font-weight:bold;
+      margin:10px 0;
+    }
+
+    .whatsapp{
+      display:inline-block;
+      background:#25D366;
+      color:white;
+      padding:10px 20px;
+      border-radius:30px;
+      text-decoration:none;
+      margin-top:10px;
+      font-weight:bold;
+    }
+
+    .about{
+      padding:40px 20px;
+      text-align:center;
+      line-height:1.8;
+    }
+
+    footer{
+      background:#ff5e8a;
+      color:white;
+      text-align:center;
+      padding:30px 20px;
+      margin-top:40px;
+    }
+
+    .contact{
+      margin-top:15px;
+      line-height:1.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bella Beauté Skin</h1>
+  <p>La beauté naturelle qui révèle votre éclat ✨</p>
+
+  <a class="btn" href="https://wa.me/2290162946022">
+    Commander Maintenant
+  </a>
+</header>
+
+<h2 class="section-title">Nos Produits</h2>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800" alt="Savon">
+
+    <div class="card-content">
+      <h3>Savon Éclaircissant Bio</h3>
+
+      <p>Nettoie la peau et donne un teint lumineux.</p>
+
+      <div class="price">5 000 FCFA</div>
+
+      <a class="whatsapp" href="https://wa.me/2290162946022?text=Bonjour%20je%20veux%20commander%20le%20Savon%20Éclaircissant%20Bio">
+        Commander
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="Lait corporel">
+
+    <div class="card-content">
+      <h3>Lait Corporel Naturel</h3>
+
+      <p>Hydrate et adoucit votre peau naturellement.</p>
+
+      <div class="price">8 000 FCFA</div>
+
+      <a class="whatsapp" href="https://wa.me/2290162946022?text=Bonjour%20je%20veux%20commander%20le%20Lait%20Corporel%20Naturel">
+        Commander
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800" alt="Huile beauté">
+
+    <div class="card-content">
+      <h3>Huile de Beauté</h3>
+
+      <p>Rend la peau douce, brillante et parfumée.</p>
+
+      <div class="price">6 500 FCFA</div>
+
+      <a class="whatsapp" href="https://wa.me/2290162946022?text=Bonjour%20je%20veux%20commander%20l'Huile%20de%20Beauté">
+        Commander
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<section class="about">
+  <h2 class="section-title">Pourquoi Choisir Bella Beauté Skin ?</h2>
+
+  <p>
+    Bella Beauté Skin vous propose des produits cosmétiques naturels,
+    efficaces et adaptés à tous les types de peau.
+    
+    Notre mission est de révéler votre beauté naturelle avec des soins de qualité.
+  </p>
+</section>
+
+<footer>
+  <h2>Bella Beauté Skin</h2>
+
+  <div class="contact">
+    WhatsApp : 0162946022 <br>
+    Appel : 0143274410 <br>
+    Email : belvieseto644@gmail.com <br>
+    Adresse : Adjagbo, Abomey-Calavi
+  </div>
+
+  <p style="margin-top:20px;">
+    © 2026 Bella Beauté Skin - Tous droits réservés.
+  </p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# Comment ajouter ce code sur GitHub
+
+1. Ouvre ton dépôt GitHub
+2. Clique sur ➕
+3. Clique sur :
+
+```text
+Create new file
+```
+
+4. Nom du fichier :
+
+```text
+index.html
+```
+
+5. Colle tout le code
+6. Clique sur :
+
+```text
+Commit changes
+```
+
+Après quelques secondes ton site sera automatiquement mis à jour sur Netlify 🚀
